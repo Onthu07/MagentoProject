@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="chrome(failed)">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="extentReports.GenerateExtentReport">
+        <methods>
+          <include name="testHomePage"/>
+          <include name="CompareProducts"/>
+          <include name="testCustomer_Login"/>
+          <include name="startReport"/>
+          <include name="CleanUp"/>
+          <include name="captureStatus"/>
+          <include name="gotoMobile_page"/>
+          <include name="testLogin"/>
+          <include name="Register"/>
+        </methods>
+      </class> <!-- extentReports.GenerateExtentReport -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
